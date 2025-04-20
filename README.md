@@ -44,15 +44,15 @@ VWF and download waveform after the execution
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by:somalaraju rohini RegisterNumber:212224240156
 */
 ```
-module exp_7(J,K,clk,q,qbar);
-input J,K,clk; 
-output reg q;
+module exp_7(J,K,cLk,q,qbar); 
+input J,K,cLk; 
+output reg q; 
 output reg qbar; 
 initial q=0;
 initial qbar=1; 
-always @(posedge clk) 
+always@(posedge cLk) 
 begin 
-q=((J&(~q))|((~k)&q)); 
+q=((J&(~q))|((~K)&q)); 
 qbar=~q;
 end
 endmodule
@@ -61,10 +61,10 @@ endmodule
 
 
 
+![Screenshot 2025-04-20 165218](https://github.com/user-attachments/assets/76c722a4-3073-4a84-961a-3147952da1d4)
 
 
 
-![Screenshot 2025-04-20 161832](https://github.com/user-attachments/assets/f46542bd-baa7-457c-ac72-ee8ad873cb61)
 
 
 
@@ -81,8 +81,8 @@ endmodule
 
 
 
+![Screenshot 2025-04-20 165343](https://github.com/user-attachments/assets/13e4e7d7-2458-4a71-ada9-e6e76f47244b)
 
-![Screenshot 2025-04-20 161843](https://github.com/user-attachments/assets/a0415ac2-d86d-42ad-b962-5bcd435aaf98)
 
 
 
